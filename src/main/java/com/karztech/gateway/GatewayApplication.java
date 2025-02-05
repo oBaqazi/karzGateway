@@ -16,10 +16,10 @@ public class GatewayApplication {
 
 				.route(p -> p
 						.path("/api/chat") // intercept calls to the /get path
-						.uri("http://167.99.246.161:8091"))
+						.uri("http://172.17.0.1:8080"))
 				.route(p -> p
 						.path("/api/**") // intercept calls to the /get path
-						.uri("https://dev.api.karztech.com"))
+						.uri("http://172.17.0.1:8091"))
 				.build();
 	}
 
